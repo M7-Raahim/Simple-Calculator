@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<div class="product-card">
+        <div class="product-image">
+            <div class="shoe-icon"><img src="/assets/Windows_Calculator_icon-removebg-preview.png"></div>
+        </div>
+        
+        <h3 class="product-title">Simple Calculator</h3>
+        
+        <p class="product-description">A clean, modern calculator built with JavaScript featuring an intuitive touch-friendly interface. This lightweight calculator handles all basic arithmetic operations including addition, subtraction, multiplication, and division.</p>
+        <h3>By : M.Raahim</h3>
+        <a href="https://github.com/M7-Raahim" class="gitlink"><img src="/assets/github-icon-logo-png_seeklogo-503247-removebg-preview.png"><p>GitHub</p></a>        
+        <!-- <button href="https://github.com/M7-Raahim" class="github">Git Hub</button> -->
+        
+    </div>    
+    <div class="calc-container">
+<div class="calculator">
+    <div class="display" id="display">
+        <div class="previous" id="previous"></div>
+        <div class="current" id="current">0</div>
+    </div>
+    
+    <div class="buttons">
+        <button class="btn-clear" onclick="clearAll()">AC</button>
+        <button class="btn-clear" onclick="clearEntry()">CE</button>
+        <button class="btn-operator" onclick="setOperation('/')" data-op="/">÷</button>
+        <button class="btn-operator" onclick="setOperation('*')" data-op="*">×</button>
+        
+        <button class="btn-number" onclick="appendNumber('7')">7</button>
+        <button class="btn-number" onclick="appendNumber('8')">8</button>
+        <button class="btn-number" onclick="appendNumber('9')">9</button>
+        <button class="btn-operator" onclick="setOperation('-')" data-op="-">−</button>
+        
+        <button class="btn-number" onclick="appendNumber('4')">4</button>
+        <button class="btn-number" onclick="appendNumber('5')">5</button>
+        <button class="btn-number" onclick="appendNumber('6')">6</button>
+        <button class="btn-operator" onclick="setOperation('+')" data-op="+">+</button>
+        
+        <button class="btn-number" onclick="appendNumber('1')">1</button>
+        <button class="btn-number" onclick="appendNumber('2')">2</button>
+        <button class="btn-number" onclick="appendNumber('3')">3</button>
+        <button class="btn-equals" onclick="calculate()" rowspan="2">=</button>
+        
+        <button class="btn-number btn-zero" onclick="appendNumber('0')">0</button>
+        <button class="btn-decimal" onclick="appendDecimal()">.</button>
+    </div>
+</div>
+</div>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
